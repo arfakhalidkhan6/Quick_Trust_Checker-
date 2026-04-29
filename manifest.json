@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Multi-Agent Smart Assistant",
+  "version": "2.0",
+  "description": "In-page AI assistant with specialized agents.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

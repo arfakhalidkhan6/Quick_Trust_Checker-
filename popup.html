@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+  <title>Smart Reading Assistant</title>
+  <style>
+    /* UI Window Styling */
+    body { 
+        width: 320px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        padding: 15px; 
+        background: #f8f9fa; 
+        margin: 0; 
+    }
+
+    /* Header */
+    h3 { 
+        margin-top: 0; 
+        color: #333; 
+        text-align: center; 
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Beautiful Buttons */
+    button { 
+        width: 100%; 
+        padding: 12px; 
+        margin-bottom: 10px; 
+        border: none; 
+        border-radius: 6px; 
+        cursor: pointer; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 14px; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        transition: all 0.2s ease-in-out;
+    }
+
+    button:active { transform: scale(0.98); }
+
+    #btn-safety { background-color: #dc3545; } 
+    #btn-safety:hover { background-color: #c82333; }
+
+    #btn-summarize { background-color: #28a745; } 
+    #btn-summarize:hover { background-color: #218838; }
+
+    /* Scrollable Chat Box */
+    #chat-box { 
+        margin-top: 15px; 
+        padding: 12px; 
+        background: white; 
+        border: 1px solid #ddd; 
+        border-radius: 6px; 
+        min-height: 80px; 
+        max-height: 250px; 
+        overflow-y: auto;  
+        font-size: 14px; 
+        color: #444; 
+        line-height: 1.5; 
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <h3>Smart Reading Assistant</h3>
+  <button id="btn-safety">Check Website Authenticity</button>
+  <button id="btn-summarize">Summarize Page</button>
+  <div id="chat-box">Ready to help! Click a button above.</div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
